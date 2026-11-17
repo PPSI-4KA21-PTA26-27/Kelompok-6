@@ -1,0 +1,53 @@
+<?php
+
+return [
+    'required' => ':attribute wajib diisi.',
+    'string' => ':attribute harus berupa teks.',
+    'email' => ':attribute harus berupa alamat email yang valid.',
+    'integer' => ':attribute harus berupa angka bulat.',
+    'boolean' => ':attribute harus bernilai benar atau salah.',
+    'array' => ':attribute harus berupa daftar.',
+    'in' => ':attribute yang dipilih tidak valid.',
+    'url' => ':attribute harus berupa tautan yang valid.',
+    'file' => ':attribute harus berupa berkas.',
+    'mimes' => ':attribute harus berformat: :values.',
+    'regex' => 'Format :attribute tidak valid.',
+    'gte' => [
+        'numeric' => ':attribute harus lebih besar atau sama dengan :value.',
+    ],
+    'min' => [
+        'numeric' => ':attribute minimal :min.',
+        'string' => ':attribute minimal :min karakter.',
+        'array' => ':attribute minimal :min item.',
+    ],
+    'max' => [
+        'numeric' => ':attribute maksimal :max.',
+        'file' => ':attribute maksimal :max KB.',
+        'string' => ':attribute maksimal :max karakter.',
+        'array' => ':attribute maksimal :max item.',
+    ],
+    'uploaded' => ':attribute gagal diunggah.',
+
+    'attributes' => [
+        'nama' => 'Nama produk',
+        'kategori' => 'Kategori',
+        'harga' => 'Harga',
+        'deskripsi' => 'Deskripsi',
+        'foto' => 'Foto',
+        'shopee_url' => 'Tautan Shopee',
+        'instagram_url' => 'Tautan Instagram',
+        'whatsapp' => 'Nomor WhatsApp',
+        'pertanyaan' => 'Pertanyaan',
+        'jawaban' => 'Jawaban',
+        'kata_kunci' => 'Kata kunci',
+        'nama_toko' => 'Nama toko',
+        'profil' => 'Profil usaha',
+        'keunggulan' => 'Keunggulan',
+        'lokasi' => 'Lokasi',
+        'email' => 'Email',
+        'password' => 'Kata sandi',
+        'pesan' => 'Pertanyaan',
+        'harga_min' => 'Harga minimum',
+        'harga_maks' => 'Harga maksimum',
+    ],
+];

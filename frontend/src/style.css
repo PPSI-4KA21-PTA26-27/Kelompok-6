@@ -1,0 +1,53 @@
+@import '@fontsource/poppins/400.css';
+@import '@fontsource/poppins/500.css';
+@import '@fontsource/poppins/600.css';
+@import '@fontsource/poppins/700.css';
+@import 'tailwindcss';
+
+/* Token desain Tani Casual (dari wireframe/mockup FigCraft). */
+@theme {
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+
+  --color-navy: #0b1220;
+  --color-brand: #1d4ed8;
+  --color-brand-dark: #1e40af;
+  --color-sky-soft: #dbeafe;
+  --color-ice: #eaf2ff;
+  --color-mist: #eff6ff;
+  --color-line: #bfd3f5;
+  --color-ink: #475569;
+  --color-muted: #94a3b8;
+
+  --color-wa: #16a34a;
+  --color-wa-dark: #15803d;
+  --color-shopee: #ee4d2d;
+  --color-shopee-dark: #d83f21;
+  --color-danger: #dc2626;
+
+  /* Bayangan biru lembut seperti di desain */
+  --shadow-header: 0 2px 12px rgb(29 78 216 / 0.1);
+  --shadow-card: 0 6px 20px rgb(29 78 216 / 0.12);
+  --shadow-hero: 0 12px 32px rgb(29 78 216 / 0.15);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-bold text-navy;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand;
+  }
+}
+
+@layer components {
+  /* Lebar isi halaman: 1440 px, jarak samping 80 px di laptop (sesuai desain). */
+  .wrap {
+    @apply mx-auto w-full max-w-[1440px] px-4 sm:px-8 lg:px-20;
+  }
+}
